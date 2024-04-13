@@ -27,7 +27,7 @@ body {
 #buttonContainer {
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 #quoteButton {
@@ -73,5 +73,9 @@ body {
     #quoteButton,
     #addNew {
         display: block;
+    }
+
+    #buttonContainer {
+        margin-top: 200px;
     }
 }

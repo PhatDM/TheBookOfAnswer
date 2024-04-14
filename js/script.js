@@ -1,7 +1,28 @@
-function clickAnswer(){
-    var english, vietnamese;
-    var titleAnswer = document.getElementById("title-answer");
+var english, vietnamese;
+var titleAnswer = document.getElementById("title-answer");
+var buttonAnswer = document.getElementById('quoteButton');
 
+function onloadFuncion() {
+    fetch('https://thebookofanswers.azurewebsites.net/answer')
+    .then(response => {
+        if (response.ok) {
+            return response.json(); // Parse the response data as JSON
+        } else {
+            throw new Error('API request failed');
+        }
+    })
+    .then(data => {
+        setTimeout(disableButton, 1000)
+    })
+    .catch(error => {
+    });
+}
+
+function disableButton(){
+    buttonAnswer.style.visibility = 'visible';
+}
+
+function clickAnswer(){
     fetch('https://thebookofanswers.azurewebsites.net/answer/random')
         .then(response => {
             if (response.ok) {

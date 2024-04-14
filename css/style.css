@@ -22,6 +22,7 @@ body {
     margin: 30px auto;
     text-align: center;
     height: 70px;
+    font-size: 18px;
 }
 
 #buttonContainer {
@@ -37,9 +38,11 @@ body {
     color: #045;
     font-family: inherit;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     text-align: center;
+    font-size: 20px;
+    visibility: hidden;
 }
 
 #quoteButton:hover {
@@ -64,6 +67,10 @@ body {
 
 #vietnamese{
     font-weight: bold;;
+}
+
+#title-answer{
+    font-size: 25px;
 }
 
 
